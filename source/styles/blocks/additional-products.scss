@@ -1,0 +1,226 @@
+.additional-products {
+  padding-bottom: 40px;
+}
+
+.additional-products__title {
+  @include oswald-black;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  position: relative;
+  width: 226px;
+  padding-bottom: 36px;
+  padding-right: 40px;
+  padding-left: 20px;
+  left: -20;
+  background-color: #ffffff;
+}
+
+.additional-products__list {
+  list-style: none;
+  padding: 0;
+}
+
+.additional-products__item-title {
+  @include oswald-black;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-top: 11px;
+  padding-bottom: 13px;
+}
+
+.additional-products__item {
+  border-top: $border;
+  padding-bottom: 20px;
+}
+
+.additional-products__item-quantity {
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-products__item-price {
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-products__info {
+  @include lato-dark-grey;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-products__item-button {
+  @include oswald-white;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: $green;
+}
+
+.additional-products::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  margin-top: 10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $green;
+}
+
+@media (min-width: $tablet) {
+  .additional-products {
+    padding-bottom: 0;
+  }
+
+  .additional-products__title {
+    font-size: 32px;
+    line-height: 32px;
+    width: 301px;
+    padding-top: 0;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    border: none;
+    left: 0;
+  }
+
+  .additional-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+
+  .additional-products__list {
+    border-top: $border;
+  }
+
+  .additional-products__item {
+    align-items: center;
+    padding: 25px 38px 27px;
+    border: $border;
+    border-top: none;
+  }
+
+  .additional-products__item-title {
+    @include oswald-black;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 50%;
+  }
+
+  .additional-products__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-products__item-quantity {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .additional-products__item-price {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 0;
+    padding-left: 49px;
+  }
+
+
+  .additional-products::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    margin-top: 14px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $green;
+  }
+}
+
+@media (min-width: $desktop) {
+  .additional-products__wrapper {
+    display: flex;
+  }
+
+  .additional-wrapper {
+    padding: 0;
+  }
+
+  .additional-products {
+    padding: 0;
+  }
+
+  .additional-products__title {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0 40 80px;
+    min-width: 376px;
+    left: -40;
+  }
+
+  .additional-products__list {
+    min-width: 896px;
+    min-height: 288px;
+  }
+
+  .additional-products__item {
+    min-width: 896px;
+    display: flex;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .additional-products__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    min-width: 161px;
+    padding-right: 164px;
+  }
+
+  .additional-products__item-quantity {
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 112px;
+    min-width: 131px;
+    display: flex;
+    place-items: center;
+  }
+
+  .additional-products__item-price {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 42px;
+    padding-right: 40px;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+
+  .additional-products::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    margin-top: 17px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $green;
+  }
+}

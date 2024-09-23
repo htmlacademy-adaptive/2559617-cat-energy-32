@@ -1,0 +1,270 @@
+.physique {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.physique__title {
+  @include oswald-black;
+  font-size: 24px;
+  line-height: 37px;
+
+  display: flex;
+  align-items: center;
+}
+
+.physique__description {
+  @include lato-dark-grey;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 23px;
+  padding-top: 22px;
+  box-sizing: border-box;
+}
+
+.physique__description--slim {
+  padding-left: 20px;
+  padding-right: 33px;
+}
+
+.physique__transition {
+  @include oswald-black;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 24px;
+  border-top: $border;
+  display: flex;
+  align-items: center;
+}
+
+.physique__transition::after {
+  content: "";
+  background-image: url("../../icons/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  width: 24px;
+  height: 12px;
+  display: block;
+  margin-left: 15px;
+  transition: transform 0.2s linear;
+  transform-origin: left center;
+}
+
+.physique__transition:hover::after {
+  transform: scaleX(1.35);
+}
+
+.physique__option {
+  background-color: $basik-grey;
+}
+
+.physique__option--slim {
+  margin-bottom: 20px;
+  padding-top: 24px;
+}
+
+.physique__title::before {
+  content: "";
+  background-image: url("../../icons/cat-sitting.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.physique__title--slim::before {
+  background-image: url("../../icons/cat-sitting.svg");
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.physique__option--fat {
+  padding-top: 24px;
+}
+
+.physique__description--fat {
+  padding-left: 20px;
+  padding-right: 33px;
+  min-height: 90px;
+}
+
+.physique__title--slim {
+  padding-left: 20px;
+}
+
+.physique__title--fat {
+  padding-left: 13px;
+}
+
+.physique__title--fat::before {
+  background-image: url("../../icons/cat-going.svg");
+  width: 67px;
+  height: 50px;
+  margin-right: 11px;
+}
+
+@media (min-width: $tablet) {
+  .physique {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  .physique__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .physique__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .physique__option--slim {
+    padding-top: 77px;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .physique__title--slim {
+    padding-left: 53px;
+  }
+
+  .physique__title--slim::before {
+    width: 200px;
+    height: 211px;
+    margin: 0;
+    position: absolute;
+    right: 63px;
+    top: 81;
+  }
+
+  .physique__description--slim {
+    padding: 24px 316px 48px 52px;
+  }
+
+  .physique__transition {
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    margin: 0;
+    padding-left: 52px;
+    padding-bottom: 53px;
+    padding-top: 0;
+    min-height: 38px;
+  }
+
+  .physique__transition::after {
+    margin-left: 25px;
+  }
+
+  .physique__option--fat {
+    padding-top: 77px;
+    position: relative;
+  }
+
+  .physique__title--fat {
+    padding-left: 53px;
+  }
+
+  .physique__title--fat::before {
+    width: 268px;
+    height: 200px;
+    margin: 0;
+    position: absolute;
+    right: 29px;
+    top: 91;
+  }
+
+  .physique__description--fat {
+    padding: 24px 316px 48px 52px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .physique {
+    display: flex;
+    justify-content: center;
+    padding-top: 82px;
+    padding-bottom: 71px;
+  }
+
+  .physique__option {
+    margin: 0;
+    padding: 0;
+  }
+
+  .physique__option--slim {
+    padding-top: 41px;
+    width: 570px;
+    height: auto;
+  }
+
+  .physique__title--slim {
+    padding-left: 52px;
+    padding-top: 0;
+    padding-bottom: 39px;
+  }
+
+  .physique__title--slim::before {
+    width: 100px;
+    height: 106px;
+    margin-right: 62px;
+  }
+
+  .physique__description--slim {
+    padding-right: 61px;
+    padding-top: 23px;
+  }
+
+  .physique__option--fat {
+    margin: 0;
+    width: 570px;
+    height: auto;
+    padding-top: 47px;
+  }
+
+  .physique__title--fat {
+    padding-left: 33px;
+    padding-bottom: 39px;
+  }
+
+  .physique__title--fat::before {
+    background-image: url("../../icons/cat-going.svg");
+    width: 134px;
+    height: 100px;
+    margin-right: 47px;
+  }
+
+  .physique__description {
+    padding-top: 0;
+    padding-bottom: 23px;
+  }
+
+  .physique__description--fat {
+    min-width: 451px;
+    padding-left: 52px;
+    padding-right: 67px;
+  }
+
+  .physique__title::before {
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    display: block;
+  }
+
+  .physique__transition {
+    padding-top: 0;
+    padding-bottom: 55px;
+    padding-left: 52px;
+  }
+}

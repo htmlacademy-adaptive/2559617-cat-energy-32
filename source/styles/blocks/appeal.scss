@@ -1,0 +1,96 @@
+.appeal {
+  padding-top: 27px;
+}
+
+.appeal__title {
+  @include oswald-white;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+
+.appeal__description {
+  @include oswald-white;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  padding-bottom: 29px;
+}
+
+
+.appeal_picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: $mobile-last) {
+  .appeal {
+    background-image:
+      linear-gradient(hwb(97 22% 28% / 0.85) 302px, #ffffff 50%),
+      linear-gradient(90deg, $grey calc(50% - 160px), hsla(0, 0%, 0%, 0) 30% 70%, $grey calc(60% + 160px)),
+      image-set("../../images/mobile/index-background-cat-mobile@1x.webp" 1x type("image/webp"),
+      "../../images/mobile/index-background-cat-mobile@2x.webp" 2x type("image/webp"),
+      "../../images/mobile/index-background-cat-mobile@1x.png" 1x type("image/png"),
+      "../../images/mobile/index-background-cat-mobile@2x.png" 2x type("image/png"));
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (min-width: $tablet) {
+  .appeal {
+    padding-top: 65px;
+  }
+
+  .appeal__title {
+    @include oswald-black;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 202px;
+    padding-bottom: 40px;
+  }
+
+  .appeal__description {
+    @include oswald-black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 90px;
+    padding-bottom: 21px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .appeal {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 184px;
+  }
+
+  .appeal__title {
+    padding-top: 0;
+    padding-left: 80px;
+    width: 416px;
+    min-height: 120px;
+  }
+
+  .appeal__description {
+    padding-bottom: 52px;
+    padding-left: 80px;
+    width: 283px;
+    min-height: 20px;
+  }
+
+  .appeal_picture {
+    position: absolute;
+    top: -80px;
+    left: 557px;
+  }
+}

@@ -1,0 +1,39 @@
+.catalog {
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.catalog__title {
+  @include oswald-black;
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 41px;
+}
+
+@media (min-width: $tablet) {
+  .catalog {
+    padding-bottom: 74px;
+    padding-top: 65px;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    padding-bottom: 84px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog {
+    padding-top: 74px;
+    padding-bottom: 71px;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 84px;
+    padding-top: 0;
+  }
+}

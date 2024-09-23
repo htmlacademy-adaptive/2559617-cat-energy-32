@@ -1,0 +1,39 @@
+.gift {
+  background-image: url("../../images/mobile/catalog-background-cat-mobile@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 290px;
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: $border;
+}
+
+@media (min-width: $tablet) {
+  .gift {
+    background-image: url("../../images/tablet/catalog-background-cat-tablet@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-top: 70px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .gift {
+    background-image: url("../../images/desktop/catalog-background-cat-desktop@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 288px;
+    width: 245px;
+    margin-top: 0;
+    margin-left: 80px;
+
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+}
